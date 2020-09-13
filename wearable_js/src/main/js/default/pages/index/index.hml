@@ -1,0 +1,50 @@
+<div class="container">
+    <list class="wearable">
+        <list-item type="listItem" class="title-box">
+            <text class="title">{{title}}
+            </text>
+        </list-item>
+        <list-item type="listItem" class="list-box">
+            <div class="img-box">
+                <image src="../../common/blank.png"></image>
+            </div>
+            <div class="text-box">
+                <text class="title-text">{{$t('strings.list')}}1
+                </text>
+                <text class="subtitle-text">{{$t('strings.subtitle')}}
+                </text>
+            </div>
+            <div class="icon-box">
+                <image src="../../common/Right.png"></image>
+            </div>
+        </list-item>
+        <list-item type="listItem" class="list-box">
+            <div class="img-box">
+                <image src="../../common/blank.png"></image>
+            </div>
+            <div class="text-box">
+                <text class="title-text">{{$t('strings.list')}}2
+                </text>
+                <text class="subtitle-text">{{$t('strings.subtitle')}}
+                </text>
+            </div>
+            <div class="icon-box">
+                <image src="../../common/Right.png"></image>
+            </div>
+        </list-item>
+        <list-item type="listItem" class="list-box">
+            <div class="img-box">
+                <image src="../../common/blank.png"></image>
+            </div>
+            <div class="text-box">
+                <text class="title-text">{{$t('strings.list')}}3
+                </text>
+                <text class="subtitle-text">{{$t('strings.subtitle')}}
+                </text>
+            </div>
+            <div class="icon-box">
+                <image src="../../common/Right.png"></image>
+            </div>
+        </list-item>
+    </list>
+</div>

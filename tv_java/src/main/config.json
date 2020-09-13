@@ -1,0 +1,54 @@
+{
+  "app": {
+    "bundleName": "cn.bingoogolapple.harmonyosnote.tv.java",
+    "vendor": "bingoogolapple",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "cn.bingoogolapple.harmonyosnote.tv.java",
+    "name": ".tv_java",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "tv_java",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "visible": true,
+        "formEnabled": false,
+        "permissions": [],
+        "name": "cn.bingoogolapple.harmonyosnote.tv.java.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "tv_java",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

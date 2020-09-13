@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="content_box">
+        <text class="title">{{Title}}
+        </text>
+        <list class="content-list">
+            <list-item type="listItem" class="{{list_item_class1}}" onfocus="focusFunc1" onblur="blurFunc1">
+                <text class="{{text_class1}}">{{$t('strings.list')}} 1
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+            <list-item type="divider" style="height: 12px"></list-item>
+            <list-item type="listItem" class="{{list_item_class2}}" onfocus="focusFunc2" onblur="blurFunc2">
+                <text class="{{text_class2}}">{{$t('strings.list')}} 2
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+            <list-item type="divider" style="height: 12px"></list-item>
+            <list-item type="listItem" class="{{list_item_class3}}" onfocus="focusFunc3" onblur="blurFunc3">
+                <text class="{{text_class3}}">{{$t('strings.list')}} 3
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+            <list-item type="divider" style="height: 12px"></list-item>
+            <list-item type="listItem" class="{{list_item_class4}}" onfocus="focusFunc4" onblur="blurFunc4">
+                <text class="{{text_class4}}">{{$t('strings.list')}} 4
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+            <list-item type="divider" style="height: 12px"></list-item>
+            <list-item type="listItem" class="{{list_item_class5}}" onfocus="focusFunc5" onblur="blurFunc5">
+                <text class="{{text_class5}}">{{$t('strings.list')}} 5
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+            <list-item type="divider" style="height: 12px"></list-item>
+            <list-item type="listItem" class="{{list_item_class6}}" onfocus="focusFunc6" onblur="blurFunc6">
+                <text class="{{text_class6}}">{{$t('strings.list')}} 6
+                </text>
+                <div class="bar-more">
+                    <image class="bar-img" src="../../common/arrow.png"></image>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div class="content_img">
+        <div class="img-box">
+            <image class="img-img" src=""></image>
+        </div>
+        <div class="text_box">
+            <text class="img-text">{{$t('strings.img-text')}}
+            </text>
+        </div>
+    </div>
+</div>

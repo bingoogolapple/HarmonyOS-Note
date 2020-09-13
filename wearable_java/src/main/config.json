@@ -1,0 +1,53 @@
+{
+  "app": {
+    "bundleName": "cn.bingoogolapple.harmonyosnote.wearable.java",
+    "vendor": "bingoogolapple",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "cn.bingoogolapple.harmonyosnote.wearable.java",
+    "name": ".wearable_java",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "wearable_java",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "visible": true,
+        "formEnabled": false,
+        "name": "cn.bingoogolapple.harmonyosnote.wearable.java.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "wearable_java",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

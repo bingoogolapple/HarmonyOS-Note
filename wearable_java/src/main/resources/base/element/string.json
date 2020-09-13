@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "wearable_java"
+    },
+    {
+      "name": "mainability_description",
+      "value": "hap sample empty page"
+    }
+  ]
+}

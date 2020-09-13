@@ -1,0 +1,9 @@
+<div class="container">
+    <list class="showList">
+        <list-item class="showListItem" for="{{listData}}">
+            <text>
+                {{$item}}
+            </text>
+        </list-item>
+    </list>
+</div>
