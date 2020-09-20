@@ -1,0 +1,10 @@
+<div class="root-container">
+    <text class="page-title" onclick="closePage">
+        添加代办页
+    </text>
+    <div class="content-container">
+        <picker-view class="pv-type" type="text" @change="onTypeChanged" range="{{typeList}}"/>
+        <picker-view class="pv-time" type="time" selected="01:30" @change="onTimeChanged"/>
+    </div>
+    <input type="button" value="添加代办" class="add-todo" @click="addTodo"/>
+</div>

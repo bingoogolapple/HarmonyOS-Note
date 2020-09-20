@@ -4,10 +4,4 @@ ohos {
     defaultConfig {
         compatibleSdkVersion 3
     }
-    
-}
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile'junit:junit:4.12'
 }

@@ -1,0 +1,8 @@
+<div class="root-container">
+    <text class="page-title" onclick="closePage">
+        代办详情页
+    </text>
+    <text class="todo-title">{{todoItem.title}}
+    </text>
+    <switch checked="{{todoItem.completed}}" @change="onCompleteChanged"></switch>
+</div>

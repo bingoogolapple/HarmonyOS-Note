@@ -3,8 +3,8 @@
     "bundleName": "cn.bingoogolapple.harmonyosnote.wearable.lite",
     "vendor": "bingoogolapple",
     "version": {
-      "code": 1,
-      "name": "1.0"
+      "code": 100,
+      "name": "1.0.0"
     },
     "apiVersion": {
       "compatible": 3,
@@ -25,14 +25,16 @@
       {
         "name": "default",
         "icon": "$media:icon",
-        "label": "wearable_lite",
+        "label": "轻量级智能穿戴-代办",
         "type": "page"
       }
     ],
     "js": [
       {
         "pages": [
-          "pages/index/index"
+          "pages/index/index",
+          "pages/add-todo/add-todo",
+          "pages/todo-detail/todo-detail"
         ],
         "name": "default"
       }
