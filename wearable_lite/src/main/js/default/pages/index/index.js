@@ -100,5 +100,10 @@ export default {
         console.log('退出应用')
         // 退出当前 Ability
         app.terminate()
+    },
+    testApi() {
+        router.replace({
+            uri: 'pages/api/api'
+        })
     }
 }

@@ -34,7 +34,8 @@
         "pages": [
           "pages/index/index",
           "pages/add-todo/add-todo",
-          "pages/todo-detail/todo-detail"
+          "pages/todo-detail/todo-detail",
+          "pages/api/api"
         ],
         "name": "default"
       }

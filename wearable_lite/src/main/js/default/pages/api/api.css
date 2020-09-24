@@ -1,0 +1,12 @@
+.root-container {
+    flex-direction: column;
+    align-items: center;
+    width: 454px;
+    height: 454px;
+}
+.btn-test {
+    width: 400px;
+    margin-top: 15px;
+    height: 40px;
+    background-color: #9c27b0;
+}

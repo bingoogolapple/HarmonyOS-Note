@@ -1,0 +1,6 @@
+<div class="root-container">
+    <input type="button" value="testWriteText" class="btn-test" @click="testWriteText"/>
+    <input type="button" value="testReadText" class="btn-test" @click="testReadText"/>
+    <input type="button" value="testSetStorage" class="btn-test" @click="testSetStorage"/>
+    <input type="button" value="testGetStorage" class="btn-test" @click="testGetStorage"/>
+</div>
