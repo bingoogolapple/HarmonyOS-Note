@@ -25,7 +25,7 @@
       {
         "name": "default",
         "icon": "$media:icon",
-        "label": "轻量级智能穿戴-代办",
+        "label": "$string:ab_label",
         "type": "page"
       }
     ],

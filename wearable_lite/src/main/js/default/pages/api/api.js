@@ -2,7 +2,18 @@ import storage from '@system.storage'
 import file from '@system.file'
 
 export default {
-    data: {},
+    data: {
+        title_new: ''
+    },
+    onInit() {
+        this.title_new = '追加-' + this.$t('strings.title')
+        // 直取不到 i18n 中的 title，需要通过 $t 来获取
+        console.log('直接获取 title：' + this.title)
+        console.log('title：' + this.$t('strings.title'))
+        console.log('subtitle：' + this.$t('strings.subtitle'))
+        // 未定义时返回值就是传入的 key strings.xxxx
+        console.log('未定义：' + this.$t('strings.xxxx'))
+    },
     testWriteText() {
         file.writeText({
             uri: 'internal://app/workspace/test.txt',
