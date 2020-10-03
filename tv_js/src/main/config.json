@@ -3,8 +3,8 @@
     "bundleName": "cn.bingoogolapple.harmonyosnote.tv.js",
     "vendor": "bingoogolapple",
     "version": {
-      "code": 1,
-      "name": "1.0"
+      "code": 100,
+      "name": "1.0.0"
     },
     "apiVersion": {
       "compatible": 3,
@@ -13,11 +13,6 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "cn.bingoogolapple.harmonyosnote.tv.js",
-    "name": ".tv_js",
-    "reqCapabilities": [
-      "video_support"
-    ],
     "deviceType": [
       "tv"
     ],
@@ -28,6 +23,11 @@
     },
     "abilities": [
       {
+        "name": "cn.bingoogolapple.harmonyosnote.tv.js.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:ab_desc",
+        "label": "$string:ab_label",
+        "type": "page",
         "skills": [
           {
             "entities": [
@@ -41,19 +41,17 @@
         "orientation": "landscape",
         "visible": true,
         "formEnabled": false,
-        "permissions": [],
-        "name": "cn.bingoogolapple.harmonyosnote.tv.js.MainAbility",
-        "icon": "$media:icon",
-        "description": "$string:mainability_description",
-        "label": "tv_js",
-        "type": "page",
-        "launchType": "standard"
+        "launchType": "standard",
+        "permissions": []
       }
     ],
     "js": [
       {
         "pages": [
-          "pages/index/index"
+          "pages/index/index",
+          "pages/add-todo/add-todo",
+          "pages/todo-detail/todo-detail",
+          "pages/api/api"
         ],
         "name": "default",
         "window": {
@@ -61,6 +59,11 @@
           "autoDesignWidth": true
         }
       }
+    ],
+    "package": "cn.bingoogolapple.harmonyosnote.tv.js",
+    "name": ".TvJs",
+    "reqCapabilities": [
+      "video_support"
     ]
   }
 }

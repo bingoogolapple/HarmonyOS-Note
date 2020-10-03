@@ -2,11 +2,15 @@
   "string": [
     {
       "name": "app_name",
-      "value": "tv_js"
+      "value": "智慧屏-代办"
     },
     {
-      "name": "mainability_description",
-      "value": "hap sample empty page"
+      "name": "ab_label",
+      "value": "智慧屏-代办 label"
+    },
+    {
+      "name": "ab_desc",
+      "value": "智慧屏-代办 desc"
     }
   ]
 }

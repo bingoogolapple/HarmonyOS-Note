@@ -2,11 +2,15 @@
   "string": [
     {
       "name": "app_name",
-      "value": "wearable_js"
+      "value": "智能穿戴-代办"
     },
     {
-      "name": "mainability_description",
-      "value": "hap sample empty page"
+      "name": "ab_label",
+      "value": "智能穿戴-代办 label"
+    },
+    {
+      "name": "ab_desc",
+      "value": "智能穿戴-代办 desc"
     }
   ]
 }

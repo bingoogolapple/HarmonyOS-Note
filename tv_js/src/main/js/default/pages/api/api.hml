@@ -1,0 +1,13 @@
+<div class="root-container">
+    <input type="button" value="testWriteText" class="btn-test" @click="testWriteText"/>
+    <input type="button" value="testReadText" class="btn-test" @click="testReadText"/>
+    <input type="button" value="testSetStorage" class="btn-test" @click="testSetStorage"/>
+    <input type="button" value="testGetStorage" class="btn-test" @click="testGetStorage"/>
+    <!-- 直取不到 i18n 中的 title，需要通过 $t 来获取  -->
+    <text>title：{{title}}</text>
+    <text>tn：{{title_new}}</text>
+    <text>tt：{{$t('strings.title')}}</text>
+    <text>tst：{{$t('strings.subtitle')}}</text>
+    <!-- 未定义时返回值就是传入的 key strings.xxxx -->
+    <text>未定义：{{$t('strings.xxxx')}}</text>
+</div>

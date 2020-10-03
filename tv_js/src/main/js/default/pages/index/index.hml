@@ -1,64 +1,36 @@
-<div class="container">
-    <div class="content_box">
-        <text class="title">{{Title}}
-        </text>
-        <list class="content-list">
-            <list-item type="listItem" class="{{list_item_class1}}" onfocus="focusFunc1" onblur="blurFunc1">
-                <text class="{{text_class1}}">{{$t('strings.list')}} 1
+<div class="root-container" onswipe="onSwipeRoot">
+    <!-- 目前 class 还不支持动态绑定，行内样式支持动态绑定 -->
+    <text class="page-title" style="color: {{customTitleColor}}" @click="testApi">
+        代办列表页
+    </text>
+    <!-- 堆叠容器，子组件按照顺序依次入栈，后一个子组件覆盖前一个子组件 -->
+    <stack class="stack-container">
+        <div class="bg-container">
+            <image class="bg-avatar" src="/common/avatar.png"/>
+        </div>
+        <!-- 列表包含一系列相同宽度的列表项。适合连续、多行呈现同类数据。子组件仅支持 list-item -->
+        <list class="todo-list">
+            <!-- js 列表渲染、条件渲染 https://github.com/bingoogolapple/HarmonyOS-Note/issues/4 -->
+            <!-- list 的子组件，用来展示列表具体 item -->
+            <list-item class="todo-item" for="{{todoList}}" tid="id">
+                <text class="todo-title" onclick="openTodoDetailPage($item)">
+                    {{$item.title}}
                 </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
-            </list-item>
-            <list-item type="divider" style="height: 12px"></list-item>
-            <list-item type="listItem" class="{{list_item_class2}}" onfocus="focusFunc2" onblur="blurFunc2">
-                <text class="{{text_class2}}">{{$t('strings.list')}} 2
+                <!--
+                <text class="todo-status">
+                    {{$item.completed ? '已完成' : '未完成'}}
                 </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
-            </list-item>
-            <list-item type="divider" style="height: 12px"></list-item>
-            <list-item type="listItem" class="{{list_item_class3}}" onfocus="focusFunc3" onblur="blurFunc3">
-                <text class="{{text_class3}}">{{$t('strings.list')}} 3
+                -->
+                <!-- if 后面的表达式为 false 时组件不会在 vdom 中构建，也不会渲染，而 show 后面的表达式为 false 时虽然也不渲染，但会在 vdom 中构建 -->
+                <text class="todo-status todo-status-completed" if="{{$item.completed}}">
+                    已完成
                 </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
-            </list-item>
-            <list-item type="divider" style="height: 12px"></list-item>
-            <list-item type="listItem" class="{{list_item_class4}}" onfocus="focusFunc4" onblur="blurFunc4">
-                <text class="{{text_class4}}">{{$t('strings.list')}} 4
+                <text class="todo-status" else>
+                    未完成
                 </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
-            </list-item>
-            <list-item type="divider" style="height: 12px"></list-item>
-            <list-item type="listItem" class="{{list_item_class5}}" onfocus="focusFunc5" onblur="blurFunc5">
-                <text class="{{text_class5}}">{{$t('strings.list')}} 5
-                </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
-            </list-item>
-            <list-item type="divider" style="height: 12px"></list-item>
-            <list-item type="listItem" class="{{list_item_class6}}" onfocus="focusFunc6" onblur="blurFunc6">
-                <text class="{{text_class6}}">{{$t('strings.list')}} 6
-                </text>
-                <div class="bar-more">
-                    <image class="bar-img" src="../../common/arrow.png"></image>
-                </div>
             </list-item>
         </list>
-    </div>
-    <div class="content_img">
-        <div class="img-box">
-            <image class="img-img" src=""></image>
-        </div>
-        <div class="text_box">
-            <text class="img-text">{{$t('strings.img-text')}}
-            </text>
-        </div>
-    </div>
+    </stack>
+    <!-- onclick 或 @click 都可以 -->
+    <input type="button" value="添加代办" class="add-todo" @click="openAddTodoPage"/>
 </div>

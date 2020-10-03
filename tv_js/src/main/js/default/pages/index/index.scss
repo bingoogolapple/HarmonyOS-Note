@@ -1,0 +1,72 @@
+/*
+JS UI 以 454px（这里的 px 是逻辑像素，非物理像素）为基准宽度
+字体大小默认为 30px，且仅支持设置为 30px 或 38px
+*/
+@import '../../common/style.css';
+
+.root-container {
+    flex-direction: column;
+    align-items: center; /* 交叉轴 */
+    width: 454px;
+    height: 454px;
+}
+.add-todo {
+    width: 170px;
+    margin-bottom: 30px;
+    height: 40px;
+    background-color: #9c27b0;
+}
+.stack-container {
+    width: 316px;
+    height: 316px;
+}
+.bg-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    height: 316px;
+}
+.bg-avatar {
+    width: 200px;
+    height: 200px;
+    // https://juejin.im/post/6844903635495682055
+    // https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-components-common-animation-0000001054163953
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.todo-list {
+    flex-direction: column;
+    width: 316px;
+    height: 316px;
+    background-color: transparent;
+}
+.todo-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 316px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+}
+.todo-title {
+    color: #1e88e5;
+}
+.todo-status {
+    color: #d4e157;
+    font-size: 30px;
+}
+.todo-status-completed {
+    color: #66bb6a;
+}

@@ -3,8 +3,8 @@
     "bundleName": "cn.bingoogolapple.harmonyosnote.wearable.js",
     "vendor": "bingoogolapple",
     "version": {
-      "code": 1,
-      "name": "1.0"
+      "code": 100,
+      "name": "1.0.0"
     },
     "apiVersion": {
       "compatible": 3,
@@ -13,11 +13,6 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "cn.bingoogolapple.harmonyosnote.wearable.js",
-    "name": ".wearable_js",
-    "reqCapabilities": [
-      "video_support"
-    ],
     "deviceType": [
       "wearable"
     ],
@@ -28,6 +23,11 @@
     },
     "abilities": [
       {
+        "name": "cn.bingoogolapple.harmonyosnote.wearable.js.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:ab_desc",
+        "label": "$string:ab_label",
+        "type": "page",
         "skills": [
           {
             "entities": [
@@ -41,18 +41,16 @@
         "orientation": "portrait",
         "visible": true,
         "formEnabled": false,
-        "name": "cn.bingoogolapple.harmonyosnote.wearable.js.MainAbility",
-        "icon": "$media:icon",
-        "description": "$string:mainability_description",
-        "label": "wearable_js",
-        "type": "page",
         "launchType": "standard"
       }
     ],
     "js": [
       {
         "pages": [
-          "pages/index/index"
+          "pages/index/index",
+          "pages/add-todo/add-todo",
+          "pages/todo-detail/todo-detail",
+          "pages/api/api"
         ],
         "name": "default",
         "window": {
@@ -60,6 +58,11 @@
           "autoDesignWidth": true
         }
       }
+    ],
+    "package": "cn.bingoogolapple.harmonyosnote.wearable.js",
+    "name": ".WearableJs",
+    "reqCapabilities": [
+      "video_support"
     ]
   }
 }
